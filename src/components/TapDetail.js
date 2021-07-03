@@ -1,26 +1,14 @@
-import React from 'react';
-import Tap from './Tap';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
+function TapDetail(props){
+  const {tap, onClickingDelete, onClickindEdit,onSubtractPint} = props;
 
-function TapList(props){
   return (
     <React.Fragment>
-      {props.tapList.map((tap) =>
-      <Tap
-      whenTapClicked = {props.onTapSelection}
-      names={tap.names}
-      pint={tap.pint}
-      id={tap.id}/>
-  )}
+      <h1>Tap Detail</h1>
+      <h3>{tap.names}</h3>
+      <h3>{tap.pint}</h3>
       </React.Fragment>
-
   );
 }
-
-TapList.propTypes = {
-  tapList: PropTypes.array,
-  onTapSelection: PropTypes.func
-};
-
-export default TapList;
