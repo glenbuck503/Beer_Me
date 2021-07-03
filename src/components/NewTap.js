@@ -21,8 +21,8 @@ function NewTap(props) {
   );
 }
 
-NewTap.propTypes = {
-  onNewTapCreation: PropTypes.func
-};
-
-export default NewTap;
+  NewTap.propTypes = {
+    onNewTapCreation: PropTypes.func
+  };
+  
+  export default NewTap;

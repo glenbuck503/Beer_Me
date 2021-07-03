@@ -17,4 +17,17 @@ function Tap(props) {
   );
 }
 
+TapDetail.propTypes = {
+  tap: PropTypes.object
+}
+
+Tap.propTypes = {
+  whenTapClicked: PropTypes.func,
+  names: PropTypes.string,
+  pint: PropTypes.number,
+  id: PropTypes.string
+  
+};
+
+
 export default Tap;
