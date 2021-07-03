@@ -7,7 +7,7 @@ function App(){
     <React.Fragment>
       <Header/>
       <p>Welcome to The Tap Room!</p>
-      <TapControl/>
+      {/* <TapControl/> */}
       </React.Fragment>
   );
 }
