@@ -4,12 +4,14 @@ import PropTypes from "prop-types";
 
 function TapList(props){
   const {tap, onClickingDelete, onClickingEdit,onSubtractPint} = props;
+
   return (
     <React.Fragment>
       <hr/>
       {props.tapList.map((tap) =>
         <Tap
-          whenTapClicked = { props.onTapSelection }
+         whenTapClicked = { props.onTapSelection }
+
           names={tap.names}
           pint={tap.pint}
           id={tap.id}/>
@@ -17,6 +19,11 @@ function TapList(props){
           
        
       )}
+
+      
+      
+            
+
       
       
     </React.Fragment>
@@ -26,7 +33,7 @@ function TapList(props){
 TapList.propTypes = {
   tapList: PropTypes.array,
   onTapSelection: PropTypes.func,
-
+  onTapSelection1:PropTypes.func
 };
 
 export default TapList;

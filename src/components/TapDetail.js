@@ -9,6 +9,7 @@ function TapDetail(props){
       <h1>Tap Detail</h1>
       <h3>{tap.names}</h3>
       <h3>{tap.pint}</h3>
+      <h3>{tap.tap}</h3>
       <button onClick={ ()=> onClickingEdit(props.pint) }>Update Tap</button> 
       
       <button onClick={()=> onClickingDelete(tap.id) }>Remove Tap</button>
