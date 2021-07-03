@@ -7,7 +7,7 @@ function EditTapForm(props){
 
   function handleEditTapFormSubmission(event) {
     event.preventDefault();
-    props.onEditTap({names: event.target.names.value, pint: event.target.pint.value, id: tap.id});
+    props.onEditTap({names: event.target.names.value, pint: event.target.pint.value, alcohol: event.target.alcohol.value,id: tap.id});
   }
 
   return (

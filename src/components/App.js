@@ -4,19 +4,23 @@ import TapControl from "./TapControl";
 
 function App(){
   return(
-    <React.Fragment>
-        
-      <Header/>
-      <div class="test">
-    
+
+    <React.Fragment>      
+              <Header/>
+  
+              <div class="test">
+
        <p>Welcome to The Tap Room!</p>
    
       
       
-     
+
        <TapControl/>
+  
        </div>
-      </React.Fragment>
+       </React.Fragment>
+
+
   );
 }
 
