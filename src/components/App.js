@@ -6,8 +6,13 @@ function App(){
   return(
     <React.Fragment>
       <Header/>
-      <p>Welcome to The Tap Room!</p>
-      <TapControl/>
+      <div class="test">
+       <p>Welcome to The Tap Room!</p>
+       <TapControl/>
+       </div>
+      
+     
+   
       </React.Fragment>
   );
 }
