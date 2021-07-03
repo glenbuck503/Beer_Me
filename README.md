@@ -1,4 +1,46 @@
-# Getting Started with Create React App
+
+<div align="center">
+<img src="https://github.com/glenbuck503.png" width="200px" height="auto" >
+</div>
+<br>
+<br>
+<br>
+
+## _Concepts Used_ 🧠
+
+* CRUD Functionality
+* [Thinking in react](https://reactjs.org/docs/thinking-in-react.html)
+* Unidirectional Data Flow
+* State Management
+
+---
+
+## _Description_ 📃
+This project is a react application designed and built during Epicodus. It Allows you to add Taps of Beer and track brand, alcohol content, flavor, price and current volume in pints. You can then decrement the volume per pint.
+
+---
+
+## _Installation Guide_ 💻 
+
+<details>
+<summary>Open for full guide</summary>
+
+### _Cloning and Initial Setup_
+
+> Repository: https://github.com/glenbuck503/Beer_me
+1. In your terminal of choice or [GitHub's Desktop Application](https://desktop.github.com/), clone the above repository from Github. For further explanation on how to clone this repository, please visit [GitHub's Documentation](https://docs.github.com/en/github/using-git/which-remote-url-should-i-use).
+2. Ensure you are running node package manager (npm) by typing "npm -v" in your terminal. You should receive a version number back (such as 6.14.9). If NPM is not installed, visit [Node's website](https://nodejs.org/en/download/) and follow the installer's steps based on your OS.
+3. Once you verify you are running npm, navigate in your terminal to tap-room-mockup directory. One there, run "npm install" in your terminal. 
+4. You can open the code in a code editor. [VS Code is recommended](https://code.visualstudio.com/)
+
+</details>
+
+---
+
+## _Additional Instructions Supplied by the React Team_  👩‍💼
+
+<details>
+<summary>Open for full guide</summary>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -8,10 +50,10 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 ### `npm test`
@@ -68,3 +110,57 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+</details>
+
+---
+
+## _Known Bugs_ 🩹
+No known bugs as of 6/2/2021
+
+---
+
+## _Future Updates_ 🛠
+* Edit and Delete features
+* Additional Styling
+
+---
+
+## _Preplanning/Component Diagram_ 📋
+
+Expectations___
+1.As a user, I want to see a list/menu of all available kegs. For each keg, I want to see its name, brand, price and alcoholContent (or perhaps something like flavor for a kombucha store).
+2. As a user, I want to submit a form to add a new keg to a list.
+3. As a user, I want to be able to click on a keg to see its detail page.
+4. As a user, I want to see how many pints are left in a keg. Hint: A full keg has roughly 124 pints.
+5. As a user, I want to be able to click a button next to a keg whenever I sell a pint of it. This should decrease the number of pints left by 1. Pints should not be able to go below 0.
+
+![Test](/taproom.png)
+
+
+
+
+
+---
+
+## _Technologies Used_ ⚙
+
+* HTML5/CSS3
+* REACT 3.2.0
+* JavaScript ES6
+* Node Package Manager 6.14.9
+* webpack 4.39.3
+* Babel 7.6.4
+* eslint 6.3.0
+* UUID
+
+## Support and contact details
+
+For contact support, please email Glen Buck <a href = "mailto: glenbuck@gamil.com">Send Email</a>
+
+## License
+
+343.12323.11
+
+Copyright (c) 2021, Glen Buck.
+
