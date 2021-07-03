@@ -19,9 +19,12 @@ img {
 
 .test {
 
- margin : 10px;
- position:fixed;
+ margin-left : 100px;
+ position :absolute;
  color: white;
+ padding-right: 200px;
+ font-size: 40px;
+ text-shadow: 2px 2px #ffc400;
 
 
 
