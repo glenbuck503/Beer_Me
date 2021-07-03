@@ -3,6 +3,7 @@ import Tap from './Tap';
 import PropTypes from "prop-types";
 
 function TapList(props){
+  const {tap, onClickingDelete, onClickingEdit,onSubtractPint} = props;
   return (
     <React.Fragment>
       <hr/>
@@ -12,8 +13,11 @@ function TapList(props){
           names={tap.names}
           pint={tap.pint}
           id={tap.id}/>
+
+          
        
       )}
+      
       
     </React.Fragment>
     
@@ -21,7 +25,8 @@ function TapList(props){
 }
 TapList.propTypes = {
   tapList: PropTypes.array,
-  onTapSelection: PropTypes.func
+  onTapSelection: PropTypes.func,
+
 };
 
 export default TapList;

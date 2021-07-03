@@ -99,6 +99,7 @@ class TapControl extends React.Component {
 
     } else {
       currentlyVisibleState = <TapList tapList={this.state.masterTapList} onTapSelection={this.handleChangingSelectedTap} />;
+      
       buttonText = "Add Tap";
     }
     return (
