@@ -18,5 +18,11 @@ function NewTap(props) {
       formSubmissionHandler={handleNewTapSubmission}
       buttonText = "Add Tap!" />
       </React.Fragment>
-  )
+  );
 }
+
+NewTap.propTypes = {
+  onNewTapCreation: PropTypes.func
+};
+
+export default NewTap;
