@@ -6,7 +6,21 @@ import PropTypes from 'prop-types';
 function TapList(props){
   return (
     <React.Fragment>
+      {props.tapList.map((tap) =>
+      <Tap
+      whenTapClicked = {props.onTapSelection}
+      names={tap.names}
+      pint={tap.pint}
+      id={tap.id}/>
+  )}
       </React.Fragment>
 
   );
 }
+
+TapList.propTypes = {
+  tapList: PropTypes.array,
+  onTapSelection: PropTypes.func
+};
+
+export default TapList;
