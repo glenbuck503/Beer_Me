@@ -32,8 +32,8 @@ function TapList(props){
 }
 TapList.propTypes = {
   tapList: PropTypes.array,
-  onTapSelection: PropTypes.func,
-  onTapSelection1:PropTypes.func
-};
+  onTapSelection: PropTypes.func
+}
+
 
 export default TapList;

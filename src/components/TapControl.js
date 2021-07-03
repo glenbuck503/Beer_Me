@@ -73,9 +73,14 @@ class TapControl extends React.Component {
 
   handleSubtractPint = (id) => {
     const selectedTap = this.state.masterTapList.filter(tap => tap.id === id)[0];
+    
     selectedTap.pint -= 1;
+
     this.setState({selectedTap: selectedTap});
-  }
+
+  
+
+}
 
   render(){
     let currentlyVisibleState = null;
@@ -99,7 +104,6 @@ class TapControl extends React.Component {
 
     } else {
       currentlyVisibleState = <TapList tapList={this.state.masterTapList} onTapSelection={this.handleChangingSelectedTap} />;
-      
       buttonText = "Add Tap";
     }
     return (
