@@ -15,24 +15,19 @@ function TapList(props){
          whenTapClicked = { props.onTapSelection }
 
           names={tap.names}
-          pint={tap.pint}
           alcohol={tap.alcohol}
+          pint={tap.pint}
+    
    
-          id={tap.id}/>
+          id={tap.id}
+          key={tap.id}/>
 
           
        
       )}
 
-
-      
-
       
       
-            
-
-      
-
     </React.Fragment>
     
   );
@@ -40,8 +35,6 @@ function TapList(props){
 
 TapList.propTypes = {
   tapList: PropTypes.array,
-
-
   onTapSelection: PropTypes.func
 }
 

@@ -74,10 +74,14 @@ class TapControl extends React.Component {
   handleSubtractPint = (id) => {
     const selectedTap = this.state.masterTapList.filter(tap => tap.id === id)[0];
     
-    selectedTap.pint -= 1;
-
+    if (selectedTap.pint > 120){
+      selectedTap.pint -= 1;
+ 
     this.setState({selectedTap: selectedTap});
-
+    }
+    else {
+console.log("fsdfsd")
+    }
   
 
 }
