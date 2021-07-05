@@ -6,16 +6,21 @@ import PropTypes from "prop-types";
 
 function Tap(props){
 
+
   return (
    
     <React.Fragment>
       <div onClick = {() => props.whenTapClicked(props.id)}>
       
-        <p>{props.names}</p>
-        <p>{props.alcohol}</p>
-        <p><em>{props.pint}</em></p>
-
+        <h2>Tap Name: {props.names}</h2>
+        <p>Click Here For Full Details on this Tap</p>
+        {/* <p>Brand Name: {props.brand}</p>
+        <p>ABV: {props.alcohol}%</p>
+        <p>Pints Left: {props.pint}</p> */}
         <hr/>
+
+
+   
       </div>
 
     </React.Fragment>

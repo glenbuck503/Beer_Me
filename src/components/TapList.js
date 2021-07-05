@@ -15,6 +15,7 @@ function TapList(props){
          whenTapClicked = { props.onTapSelection }
 
           names={tap.names}
+          brand={tap.brand}
           alcohol={tap.alcohol}
           pint={tap.pint}
     
