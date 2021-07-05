@@ -3,7 +3,8 @@ import React from 'react';
 import NewTap from './NewTap';
 import TapList from './TapList';
 import TapDetail from './TapDetail';
-import EditTapForm from './EditTapForm';
+
+
 
 
 
@@ -14,18 +15,18 @@ class TapControl extends React.Component {
     this.state = {
       formVisibleOnPage: false,
       masterTapList: [],
-      selectedTap: null,
-      editing: false
+      selectedTap: null
+      // editing: false
     };
-    this.handleClick = this.handleClick.bind(this);
+    // this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick = () => {
     if (this.state.selectedTap != null) {
       this.setState({
         formVisibleOnPage: false,
-        selectedTap: null,
-        editing: false
+        selectedTap: null
+        // editing: false
       });
       
     } else {
@@ -74,13 +75,14 @@ class TapControl extends React.Component {
   handleSubtractPint = (id) => {
     const selectedTap = this.state.masterTapList.filter(tap => tap.id === id)[0];
     
-    if (selectedTap.pint > 120){
+    if (selectedTap.pint > 0){
       selectedTap.pint -= 1;
  
     this.setState({selectedTap: selectedTap});
     }
     else {
-console.log("fsdfsd")
+alert("Sold out!")
+
     }
   
 
@@ -90,15 +92,11 @@ console.log("fsdfsd")
     let currentlyVisibleState = null;
     let buttonText = null; 
 
-    if (this.state.editing ) {      
-      currentlyVisibleState = <EditTapForm tap = {this.state.selectedTap} onEditTap = {this.handleEditingTapInList} />
-      buttonText = "Return to Tap List";
-
-    } else if (this.state.selectedTap != null) {
+if (this.state.selectedTap != null) {
       currentlyVisibleState = <TapDetail 
         tap = {this.state.selectedTap} 
         onClickingDelete = {this.handleDeletingTap}
-        onClickingEdit = {this.handleEditClick}
+        // onClickingEdit = {this.handleEditClick}
         onSubtractPint = {this.handleSubtractPint} />
       buttonText = "Return to Tap List";
       

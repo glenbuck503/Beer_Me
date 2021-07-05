@@ -1,11 +1,12 @@
+
 import React from "react";
 import { v4 } from "uuid";
 import PropTypes from "prop-types";
 import ReusableForm from "./ReusableForm";
 
 function NewTap(props){
-const tap = {};
-tap.id = v4();
+// const tap = {};
+// tap.id = v4();
 
 function handleNewTapSubmission(event) {
   event.preventDefault();

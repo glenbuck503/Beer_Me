@@ -18,9 +18,9 @@ function TapList(props){
           alcohol={tap.alcohol}
           pint={tap.pint}
     
-   
-          id={tap.id}
-          key={tap.id}/>
+          key={tap.id}
+          id={tap.id}/>
+        
 
           
        
@@ -36,7 +36,7 @@ function TapList(props){
 TapList.propTypes = {
   tapList: PropTypes.array,
   onTapSelection: PropTypes.func
-}
+};
 
 
 export default TapList;
