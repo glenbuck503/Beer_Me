@@ -11,8 +11,8 @@ function ReusableForm(props) {
           placeholder='Tap' />
               <input
           type='text'
-          names='alcohol'
-          placeholder='alcohol' />
+          name='alcohol'
+          placeholder='abv' />
         <button type='submit'>{props.buttonText}</button>
         
       </form>

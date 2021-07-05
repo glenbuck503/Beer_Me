@@ -10,7 +10,7 @@ function NewTap(props){
 
 function handleNewTapSubmission(event) {
   event.preventDefault();
-  props.onNewTapCreation({names: event.target.names.value, pint: 124, alcohol: event.target.alcohol, id: v4()});
+  props.onNewTapCreation({names: event.target.names.value, pint: 124, alcohol: event.target.alcohol.value, id: v4()});
 }
 return (
 

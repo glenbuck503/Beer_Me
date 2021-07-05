@@ -9,10 +9,10 @@ function TapDetail(props){
   return (
     <React.Fragment>
       <h1>Tap Detail</h1>
-      <h3>{tap.names}</h3>
-      <h3>{tap.alcohol}</h3>
+      <h3>Tap Name: {tap.names}</h3>
+      <p>ABV :{tap.alcohol}%</p>
    
-      <h3>{tap.pint}</h3>
+      <h3>Pints Left :{tap.pint}</h3>
     
    
       {/* <button onClick={ ()=> onClickingEdit(props.pint) }>Update Tap</button>  */}

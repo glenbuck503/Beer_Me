@@ -28,7 +28,7 @@ function Tap(props){
 Tap.propTypes = {
 
   names: PropTypes.string,
-  alcohol: PropTypes.string,
+  alcohol: PropTypes.number,
   pint: PropTypes.number,
   id: PropTypes.string,
   whenTapClicked: PropTypes.func,
